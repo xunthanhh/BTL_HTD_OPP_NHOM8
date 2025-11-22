@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="main.controller.EventDeleteController"
+      spacing="10" alignment="CENTER"
+      style="-fx-padding: 20;">
+    <Label text="HỦY (XOÁ) SỰ KIỆN" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+    <TextField fx:id="eventId" promptText="Nhập mã sự kiện cần hủy"/>
+    <Button text="Hủy sự kiện" onAction="#handleDeleteEvent" style="-fx-background-color: #ff3300; -fx-text-fill: white;"/>
+</VBox>

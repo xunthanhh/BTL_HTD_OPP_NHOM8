@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.controller.EventDetailController"
+      alignment="CENTER"
+      spacing="16"
+      style="-fx-padding: 40; -fx-background-color: #F9F9F9;">
+    <Label text="Chi tiết sự kiện"
+           style="-fx-font-size:20;-fx-font-weight:bold;-fx-padding:8;"/>
+    <Label fx:id="nameLabel" style="-fx-font-size:16; -fx-font-weight:bold;" />
+    <Label fx:id="timeLabel" style="-fx-font-size:14;" />
+    <Label fx:id="locationLabel" style="-fx-font-size:14;" />
+    <Label fx:id="descriptionLabel" wrapText="true" style="-fx-font-size:14; -fx-max-width:380;" />
+
+    <Button text="Quay lại"
+            onAction="#handleBack"
+            style="-fx-background-color:#c00;-fx-text-fill:white;" prefWidth="120"/>
+</VBox>
