@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml"
+      spacing="18" alignment="CENTER" style="-fx-padding: 32;"
+      fx:controller="main.controller.AttendeeDashboardController">
+    <Label fx:id="welcomeLabel" text="Xin chào, ..." style="-fx-font-size:18;-fx-font-weight:bold;"/>
+    <Button text="Xem danh sách sự kiện" onAction="#handleViewUpcomingEvents" prefWidth="260"/>
+    <Button text="Đăng ký sự kiện" onAction="#handleRegisterEvent" prefWidth="260"/>
+    <Button text="Xem sự kiện đã đăng ký" onAction="#handleViewRegisteredEvents" prefWidth="260"/>
+    <Button text="Gửi phản hồi sự kiện" onAction="#handleFeedback" prefWidth="260"/>
+    <Button text="Đổi mật khẩu" onAction="#handleChangePassword" prefWidth="170"/>
+    <Button text="Đăng xuất" onAction="#handleLogout" style="-fx-background-color:#c00; -fx-text-fill:white;" prefWidth="130"/>
+</VBox>

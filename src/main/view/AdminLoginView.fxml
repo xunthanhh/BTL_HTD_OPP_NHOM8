@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="main.controller.AdminLoginController"
+      alignment="CENTER" spacing="15"
+      style="-fx-background-color: #1e1e1e; -fx-padding: 40;">
+    
+    <Label text="Đăng nhập Quản trị viên"
+           style="-fx-text-fill: #ff6600; -fx-font-size: 20px; -fx-font-weight: bold;"/>
+
+    <Label text="Tên đăng nhập:"
+           style="-fx-text-fill: white; -fx-font-size: 14px;"/>
+    <TextField fx:id="txtUsername" promptText="Nhập tên quản trị viên"
+               style="-fx-pref-width: 220; -fx-background-color: #333; -fx-text-fill: white;"/>
+
+    <Label text="Mật khẩu:"
+           style="-fx-text-fill: white; -fx-font-size: 14px;"/>
+    <PasswordField fx:id="txtPassword" promptText="Nhập mật khẩu"
+                   style="-fx-pref-width: 220; -fx-background-color: #333; -fx-text-fill: white;"/>
+
+    <Button text="Đăng nhập" onAction="#handleLogin"
+            style="-fx-background-color: #ff6600; -fx-text-fill: white; -fx-font-weight: bold; -fx-pref-width: 220;"/>
+
+    <Button text="Quay lại" onAction="#handleBack"
+            style="-fx-background-color: #444; -fx-text-fill: white; -fx-pref-width: 220;"/>
+
+</VBox>

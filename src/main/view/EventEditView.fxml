@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="main.controller.EventEditController"
+      spacing="10" alignment="CENTER"
+      style="-fx-padding: 20;">
+      
+    <Label text="CHỈNH SỬA SỰ KIỆN" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+
+    <TextField fx:id="eventId" promptText="Nhập mã sự kiện (VD: EVT1)"/>
+    <Button text="🔍 Tìm sự kiện" onAction="#handleFindEvent"
+            style="-fx-background-color: #007bff; -fx-text-fill: white;"/>
+
+    <TextField fx:id="eventName" promptText="Tên sự kiện"/>
+    <TextField fx:id="eventDate" promptText="Ngày tổ chức"/>
+    <TextField fx:id="eventLocation" promptText="Địa điểm"/>
+    <TextArea fx:id="eventDescription" promptText="Mô tả"/>
+
+    <Button text="💾 Lưu thay đổi" onAction="#handleSaveChanges"
+            style="-fx-background-color: #ff8800; -fx-text-fill: white;"/>
+</VBox>

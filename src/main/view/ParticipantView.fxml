@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="main.controller.ParticipantViewController"
+      spacing="10" alignment="CENTER"
+      style="-fx-padding: 20;">
+    <Label text="DANH SÁCH NGƯỜI THAM DỰ" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+    <TextField fx:id="eventId" promptText="Nhập mã sự kiện"/>
+    <Button text="Xem danh sách" onAction="#handleViewAttendees"
+            style="-fx-background-color: #007bff; -fx-text-fill: white;"/>
+    <TableView fx:id="attendeeTable" prefHeight="250" prefWidth="500">
+        <columns>
+            <TableColumn fx:id="colId" text="Mã" prefWidth="80"/>
+            <TableColumn fx:id="colName" text="Tên" prefWidth="120"/>
+            <TableColumn fx:id="colEmail" text="Email" prefWidth="160"/>
+            <TableColumn fx:id="colPhone" text="SĐT" prefWidth="120"/>
+        </columns>
+    </TableView>
+</VBox>

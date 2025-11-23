@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.controller.SendFeedbackController"
+      alignment="CENTER"
+      spacing="22"
+      style="-fx-padding: 40; -fx-background-color: #fbfcfd;">
+    <Label text="PHẢN HỒI NGƯỜI THAM DỰ"
+           style="-fx-font-size:20; -fx-font-weight:bold; -fx-padding:8 0 10 0;"/>
+
+    <ComboBox fx:id="eventComboBox" promptText="Chọn sự kiện đã tham gia" prefWidth="260"/>
+    <TextArea fx:id="feedbackContent" promptText="Nhập nội dung phản hồi..." prefRowCount="4" wrapText="true" prefWidth="320"/>
+    <HBox spacing="15" alignment="CENTER">
+        <Button text="Gửi phản hồi"
+                onAction="#handleSendFeedback"
+                style="-fx-background-color:#007bff; -fx-text-fill:white;"
+                prefWidth="120"/>
+        <Button text="Quay lại"
+                onAction="#handleBack"
+                style="-fx-background-color:#c00; -fx-text-fill:white;"
+                prefWidth="100"/>
+    </HBox>
+    <Label fx:id="statusLabel" text="" style="-fx-text-fill: green;" />
+</VBox>

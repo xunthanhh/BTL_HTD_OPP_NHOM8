@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml"
+      spacing="16" alignment="CENTER" style="-fx-padding: 28;"
+      fx:controller="main.controller.RegisterAttendeeFormController">
+    <Label text="ĐĂNG KÝ NGƯỜI THAM DỰ" style="-fx-font-size:18;-fx-font-weight:bold;"/>
+    <TextField fx:id="usernameField" promptText="Tên đăng nhập" prefWidth="220"/>
+    <PasswordField fx:id="passwordField" promptText="Mật khẩu" prefWidth="220"/>
+    <TextField fx:id="fullNameField" promptText="Họ tên đầy đủ" prefWidth="220"/>
+    <TextField fx:id="emailField" promptText="Email" prefWidth="220"/>
+    <TextField fx:id="phoneField" promptText="Số điện thoại" prefWidth="220"/>
+    <Button text="Đăng ký" onAction="#handleRegister"/>
+    <Label fx:id="statusLabel" text="" style="-fx-font-size:14"/>
+    <Button text="Thoát" 
+        onAction="#handleExit" 
+        prefWidth="100"
+        style="-fx-background-color: #c00; -fx-text-fill: white;"/>
+
+</VBox>
+

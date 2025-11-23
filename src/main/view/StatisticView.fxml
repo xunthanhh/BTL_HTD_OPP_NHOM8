@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="main.controller.StatisticController"
+      spacing="18" alignment="TOP_CENTER" style="-fx-padding: 24;">
+    <Label text="THỐNG KÊ SỰ KIỆN" style="-fx-font-size: 20; -fx-font-weight: bold;"/>
+    <HBox spacing="36">
+        <Label fx:id="lblTotalEvent" text="Tổng số sự kiện: 0" style="-fx-font-size: 15;"/>
+        <Label fx:id="lblTotalAttendee" text="Tổng số người tham gia: 0" style="-fx-font-size: 15;"/>
+    </HBox>
+    <Label text="Chi tiết từng sự kiện:" style="-fx-font-size: 15; -fx-font-weight: bold;"/>
+    <TableView fx:id="statisticTable" prefWidth="600" prefHeight="200">
+        <columns>
+            <TableColumn fx:id="colEventId" text="Mã sự kiện" prefWidth="80"/>
+            <TableColumn fx:id="colEventName" text="Tên sự kiện" prefWidth="180"/>
+            <TableColumn fx:id="colAttendeeCount" text="Số người tham gia" prefWidth="140"/>
+        </columns>
+    </TableView>
+    <Label text="Biểu đồ số người tham gia theo sự kiện:" style="-fx-font-size: 15; -fx-font-weight: bold;"/>
+    <BarChart fx:id="chartEvent" title="Biểu đồ sự kiện"
+              prefWidth="600" prefHeight="280"
+              categoryGap="16" barGap="6">
+        <xAxis>
+            <CategoryAxis fx:id="xAxis" label="Sự kiện"/>
+        </xAxis>
+        <yAxis>
+            <NumberAxis fx:id="yAxis" label="Số người"/>
+        </yAxis>
+    </BarChart>
+</VBox>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="main.controller.AdminDashboardController"
+            style="-fx-background-color: #1e1e1e;">
+
+    <!-- ======== Sidebar ======== -->
+    <left>
+        <VBox spacing="12" alignment="TOP_CENTER"
+              style="-fx-background-color: #2b2b2b; -fx-padding: 20; -fx-pref-width: 250;">
+            
+            <Label text="DNU Event Hub"
+                   style="-fx-text-fill: #ff6600; -fx-font-size: 20px; -fx-font-weight: bold;" />
+
+            <Separator style="-fx-background-color: #555;" />
+
+            <Button text="1️⃣ Tạo sự kiện mới"
+                    onAction="#handleCreateEvent"
+                    style="-fx-background-color: #3c3c3c; -fx-text-fill: white; -fx-font-size: 14px; -fx-pref-width: 200;"/>
+
+            <Button text="2️⃣ Sửa thông tin sự kiện"
+                    onAction="#handleEditEvent"
+                    style="-fx-background-color: #3c3c3c; -fx-text-fill: white; -fx-font-size: 14px; -fx-pref-width: 200;"/>
+
+            <Button text="3️⃣ Hủy sự kiện"
+                    onAction="#handleCancelEvent"
+                    style="-fx-background-color: #3c3c3c; -fx-text-fill: white; -fx-font-size: 14px; -fx-pref-width: 200;"/>
+
+            <Button text="4️⃣ Danh sách người tham dự"
+                    onAction="#handleViewParticipants"
+                    style="-fx-background-color: #3c3c3c; -fx-text-fill: white; -fx-font-size: 14px; -fx-pref-width: 200;"/>
+
+            <Button text="5️⃣ Báo cáo sự kiện"
+                    onAction="#handleViewReports"
+                    style="-fx-background-color: #3c3c3c; -fx-text-fill: white; -fx-font-size: 14px; -fx-pref-width: 200;"/>
+
+            <Button text="6️⃣ Thống kê chi tiết"
+                    onAction="#handleViewStatistics"
+                    style="-fx-background-color: #3c3c3c; -fx-text-fill: white; -fx-font-size: 14px; -fx-pref-width: 200;"/>
+
+            <Button text="7️⃣ Điểm danh bằng mã QR"
+                    onAction="#handleAttendanceQR"
+                    style="-fx-background-color: #3c3c3c; -fx-text-fill: white; -fx-font-size: 14px; -fx-pref-width: 200;"/>
+
+            <Button text="8️⃣ Phản hồi người tham dự"
+                    onAction="#handleFeedback"
+                    style="-fx-background-color: #3c3c3c; -fx-text-fill: white; -fx-font-size: 14px; -fx-pref-width: 200;"/>
+
+            <Button text="9️⃣ Xuất báo cáo tổng hợp"
+                    onAction="#handleExportReport"
+                    style="-fx-background-color: #3c3c3c; -fx-text-fill: white; -fx-font-size: 14px; -fx-pref-width: 200;"/>
+
+            <Separator style="-fx-background-color: #555;" />
+
+            <Button text="⬅ Đăng xuất"
+                    onAction="#handleLogout"
+                    style="-fx-background-color: #cc0000; -fx-text-fill: white; -fx-font-size: 14px; -fx-pref-width: 200;"/>
+
+        </VBox>
+    </left>
+
+    <!-- ======== Nội dung chính (Content Area) ======== -->
+    <center>
+        <AnchorPane fx:id="contentArea" style="-fx-background-color: #1e1e1e;">
+            <Label text="Chào mừng bạn đến với trang quản trị DNU Event Hub!"
+                   style="-fx-text-fill: #ff6600; -fx-font-size: 18px; -fx-font-weight: bold;"
+                   layoutX="60" layoutY="50" />
+            <Label text="Vui lòng chọn một chức năng từ thanh menu bên trái để bắt đầu."
+                   style="-fx-text-fill: #bbbbbb; -fx-font-size: 14px;"
+                   layoutX="60" layoutY="90" />
+        </AnchorPane>
+    </center>
+
+</BorderPane>

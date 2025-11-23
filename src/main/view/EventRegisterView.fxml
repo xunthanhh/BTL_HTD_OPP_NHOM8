@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.controller.EventRegisterController"
+      alignment="CENTER"
+      spacing="20"
+      style="-fx-padding: 36;">
+    <Label text="Đăng ký sự kiện" style="-fx-font-size:20; -fx-font-weight:bold; -fx-padding:10;"/>
+    <ComboBox fx:id="eventComboBox" promptText="Chọn sự kiện muốn đăng ký" prefWidth="260"/>
+    <Button text="Đăng ký"
+            onAction="#handleRegister"
+            style="-fx-background-color: #007bff; -fx-text-fill: white;" prefWidth="120"/>
+            <Button text="Hủy đăng ký"
+        onAction="#handleUnregister"
+        style="-fx-background-color:#c00; -fx-text-fill:white;"
+        prefWidth="120"/>
+    <Label fx:id="statusLabel" text="" style="-fx-text-fill: green;"/>
+    <Button text="Quay lại"
+            onAction="#handleBack"
+            style="-fx-background-color:#c00; -fx-text-fill:white;" prefWidth="120"/>
+</VBox>
