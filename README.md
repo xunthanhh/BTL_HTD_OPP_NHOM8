@@ -34,7 +34,7 @@
 ---
 
 ## Cấu trúc dự án:
-'''BTL_HTD_OPP_NHOM8/
+```BTL_HTD_OPP_NHOM8/
 ├── src/
 │   ├── main/
 │   │   ├── controller/
@@ -92,7 +92,7 @@
 │   │   ├── style.css                   # CSS styling
 ├── README.md                           # File mô tả dự án
 ├── UML.png                             # Sơ đồ UML
-'''
+```
 
 
 
