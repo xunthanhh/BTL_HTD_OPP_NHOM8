@@ -100,7 +100,7 @@
 ## Sơ đồ UML:
 
 ### **1. Model/Entity Layer:**
-
+'''
 +---------------------------------+
 |           Event                 | <--------+
 +---------------------------------+          |
@@ -222,6 +222,7 @@ bảng UML controller, chức năng
             +---------------------------+ <----runMain--| DNUEventHubApp.java
                                                         | MainView.fxml
                                                         | style.css
+                                                        ```
 XUÂN THÀNH 1
 TUẤN ANH 2
 VĂN LINH 3
