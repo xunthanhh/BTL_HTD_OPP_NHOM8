@@ -35,68 +35,64 @@
 
 ## Cấu trúc dự án:
 BTL_HTD_OPP_NHOM8/
-│
 ├── src/
-│   └── main/
-│       ├── controller/                          # Controllers chính (Người 1 + 3)
-│       │   ├── AdminDashboardController.java
-│       │   ├── AdminLoginController.java
-│       │   ├── AttendanceQRController.java
-│       │   ├── AttendeeDashboardController.java
-│       │   ├── AttendeeLoginFormController.java
-│       │   ├── ChangePasswordController.java
-│       │   ├── EventCreateController.java
-│       │   ├── EventDeleteController.java
-│       │   ├── EventDetailController.java
-│       │   ├── EventEditController.java
-│       │   ├── EventListController.java
-│       │   ├── EventRegisterController.java
-│       │   ├── EventReportController.java
-│       │   ├── ExportReportController.java
-│       │   ├── FeedbackController.java
-│       │   ├── MainViewController.java
-│       │   ├── ParticipantViewController.java
-│       │   ├── RegisterAttendeeFormController.java
-│       │   ├── RegisteredEventController.java
-│       │   ├── SendFeedbackController.java
-│       │   └── StatisticController.java
-│       │
-│       ├── model/                               # Models/Entities
-│       │   ├── Attendee.java
-│       │   ├── AttendeeManager.java
-│       │   ├── Event.java
-│       │   ├── EventManager.java
-│       │   ├── Feedback.java
-│       │   └── FeedbackManager.java
-│       │
-│       ├── view/                                # FXML Views
-│       │   ├── AdminDashboardView.fxml
-│       │   ├── AdminLoginView.fxml
-│       │   ├── AttendanceQRView.fxml
-│       │   ├── AttendeeDashboardView.fxml
-│       │   ├── AttendeeLoginForm.fxml
-│       │   ├── ChangePasswordView.fxml
-│       │   ├── EventCreateView.fxml
-│       │   ├── EventDeleteView.fxml
-│       │   ├── EventDetailView.fxml
-│       │   ├── EventEditView.fxml
-│       │   ├── EventListView.fxml
-│       │   ├── EventRegisterView.fxml
-│       │   ├── EventReportView.fxml
-│       │   ├── FeedbackExportView.fxml
-│       │   ├── FeedbackView.fxml
-│       │   ├── MainView.fxml
-│       │   ├── ParticipantView.fxml
-│       │   ├── RegisterAttendeeForm.fxml
-│       │   ├── RegisteredEventView.fxml
-│       │   ├── SendFeedbackView.fxml
-│       │   └── StatisticView.fxml
-│       │
-│       ├── DNUEventHubApp.java                  # Main Application (Entry Point)
-│       └── style.css                            # CSS styling
-│
-├── README.md                                    # File mô tả dự án
-└── UML.png                                      # Sơ đồ UML
+│   ├── main/
+│   │   ├── controller/
+│   │   │   ├── AdminDashboardController.java
+│   │   │   ├── AdminLoginController.java
+│   │   │   ├── AttendanceQRController.java
+│   │   │   ├── AttendeeDashboardController.java
+│   │   │   ├── AttendeeLoginFormController.java
+│   │   │   ├── ChangePasswordController.java
+│   │   │   ├── EventCreateController.java
+│   │   │   ├── EventDeleteController.java
+│   │   │   ├── EventDetailController.java
+│   │   │   ├── EventEditController.java
+│   │   │   ├── EventListController.java
+│   │   │   ├── EventRegisterController.java
+│   │   │   ├── EventReportController.java
+│   │   │   ├── ExportReportController.java
+│   │   │   ├── FeedbackController.java
+│   │   │   ├── MainViewController.java
+│   │   │   ├── ParticipantViewController.java
+│   │   │   ├── RegisterAttendeeFormController.java
+│   │   │   ├── RegisteredEventController.java
+│   │   │   ├── SendFeedbackController.java
+│   │   │   ├── StatisticController.java
+│   │   ├── model/
+│   │   │   ├── Attendee.java
+│   │   │   ├── Event.java
+│   │   │   ├── EventManager.java
+│   │   │   ├── Feedback.java
+│   │   │   ├── FeedbackManager.java
+│   │   │   ├── AttendeeManager.java
+│   │   ├── view/
+│   │   │   ├── AdminDashboardView.fxml
+│   │   │   ├── AdminLoginView.fxml
+│   │   │   ├── AttendanceQRView.fxml
+│   │   │   ├── AttendeeDashboardView.fxml
+│   │   │   ├── AttendeeLoginForm.fxml
+│   │   │   ├── ChangePasswordView.fxml
+│   │   │   ├── EventCreateView.fxml
+│   │   │   ├── EventDeleteView.fxml
+│   │   │   ├── EventDetailView.fxml
+│   │   │   ├── EventEditView.fxml
+│   │   │   ├── EventListView.fxml
+│   │   │   ├── EventRegisterView.fxml
+│   │   │   ├── EventReportView.fxml
+│   │   │   ├── FeedbackExportView.fxml
+│   │   │   ├── FeedbackView.fxml
+│   │   │   ├── MainView.fxml
+│   │   │   ├── ParticipantView.fxml
+│   │   │   ├── RegisterAttendeeForm.fxml
+│   │   │   ├── RegisteredEventView.fxml
+│   │   │   ├── SendFeedbackView.fxml
+│   │   │   ├── StatisticView.fxml
+│   │   ├── DNUEventHubApp.java          # Main Application (Entry Point)
+│   │   ├── style.css                   # CSS styling
+├── README.md                           # File mô tả dự án
+├── UML.png                             # Sơ đồ UML
+
 
 
 
