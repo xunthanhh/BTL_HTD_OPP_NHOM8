@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.controller.RegisteredEventController"
+      alignment="CENTER"
+      spacing="20"
+      style="-fx-padding: 36; -fx-background-color: #fafbfc;">
+    <Label text="Các sự kiện bạn đã đăng ký"
+           style="-fx-font-size:20;-fx-font-weight:bold;-fx-padding:8 0 14 0;"/>
+
+    <TableView fx:id="registeredEventTable" prefHeight="250" prefWidth="520">
+        <columns>
+            <TableColumn text="Tên sự kiện" fx:id="nameCol" prefWidth="180"/>
+            <TableColumn text="Thời gian" fx:id="timeCol" prefWidth="120"/>
+            <TableColumn text="Địa điểm" fx:id="locationCol" prefWidth="140"/>
+            <TableColumn text="Mô tả" fx:id="descriptionCol" prefWidth="220"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="16" alignment="CENTER">
+        <Button text="Quay lại"
+                onAction="#handleBack"
+                style="-fx-background-color:#c00; -fx-text-fill:white;" prefWidth="110"/>
+    </HBox>
+    <Label fx:id="statusLabel" text="" style="-fx-text-fill:red;"/>
+</VBox>
