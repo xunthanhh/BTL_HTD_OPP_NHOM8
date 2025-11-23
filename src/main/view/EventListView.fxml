@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml"
+      alignment="CENTER"
+      spacing="18"
+      style="-fx-padding: 36;"
+      fx:controller="main.controller.EventListController">
+
+    <Label text="Danh sách sự kiện"
+           style="-fx-font-size:20;-fx-font-weight:bold;-fx-padding:8;"/>
+
+    <TableView fx:id="eventTable" prefHeight="250" prefWidth="520">
+        <columns>
+            <TableColumn text="Tên sự kiện" fx:id="nameCol" prefWidth="160"/>
+            <TableColumn text="Thời gian" fx:id="timeCol" prefWidth="120"/>
+            <TableColumn text="Địa điểm" fx:id="locationCol" prefWidth="120"/>
+            <TableColumn text="Đã đăng ký" fx:id="registeredCol" prefWidth="100"/>
+        </columns>
+    </TableView>
+
+    <HBox spacing="14" alignment="CENTER">
+        <Button text="Xem chi tiết"
+                onAction="#handleViewDetail"/>
+        <Button text="Quay lại"
+                onAction="#handleExit"
+                style="-fx-background-color:#c00; -fx-text-fill:white;" prefWidth="100"/>
+    </HBox>
+
+    <Label fx:id="statusLabel"
+           text="" style="-fx-text-fill:red; -fx-font-size:14;"/>
+
+</VBox>

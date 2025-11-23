@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="main.controller.AttendanceQRController"
+      spacing="18" alignment="CENTER" style="-fx-padding: 24;">
+    <Label text="ĐIỂM DANH BẰNG MÃ QR" style="-fx-font-size: 20; -fx-font-weight: bold;"/>
+    <HBox spacing="12">
+        <TextField fx:id="txtQRInput" promptText="Nhập/chụp mã QR"/>
+        <Button text="Điểm danh" onAction="#handleCheckIn"/>
+    </HBox>
+    <Label fx:id="lblStatus" text="" style="-fx-font-size: 15; -fx-text-fill: green;"/>
+</VBox>

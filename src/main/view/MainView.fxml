@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox spacing="16" alignment="CENTER" style="-fx-padding: 38; -fx-background-color: #fcfcfc;"
+      xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="main.controller.MainViewController">
+    <Label text="Chào mừng đến với DNU Event Hub" style="-fx-font-size:20;-fx-font-weight:bold;-fx-text-fill:#FF6600;"/>
+    <Button text="Đăng nhập Admin" onAction="#handleAdminLogin" prefWidth="220" />
+    <Button text="Đăng nhập Người tham dự" onAction="#handleAttendeeLogin" prefWidth="220"/>
+    <Button text="Đăng ký Người tham dự" onAction="#handleRegisterAttendee" prefWidth="220"/>
+    <Button text="Thoát" onAction="#handleExit" style="-fx-background-color:#c00; -fx-text-fill:white; -fx-font-weight:bold;" prefWidth="120"/>
+</VBox>

@@ -1,0 +1,18 @@
+.menu-btn {
+    -fx-background-color: transparent;
+    -fx-text-fill: #cccccc;
+    -fx-font-size: 14px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 8 0 8 10;
+    -fx-background-radius: 6;
+}
+
+.menu-btn:hover {
+    -fx-background-color: #3a3a3a;
+    -fx-text-fill: #ff8800;
+}
+
+.menu-btn:focused {
+    -fx-background-color: #444;
+    -fx-text-fill: #ff8800;
+}

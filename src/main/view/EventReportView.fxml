@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns="http://javafx.com/javafx/8"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="main.controller.EventReportController"
+      spacing="16" alignment="CENTER" style="-fx-padding: 20;">
+    <Label text="BÁO CÁO SỰ KIỆN" style="-fx-font-size: 18; -fx-font-weight: bold;"/>
+    <TableView fx:id="eventTable" prefWidth="620" prefHeight="320">
+        <columns>
+            <TableColumn fx:id="eventIdCol" text="Mã sự kiện" prefWidth="100"/>
+            <TableColumn fx:id="nameCol" text="Tên sự kiện" prefWidth="180"/>
+            <TableColumn fx:id="attendeeCountCol" text="Số người tham dự" prefWidth="120"/>
+            <TableColumn fx:id="dateCol" text="Ngày" prefWidth="95"/>
+            <TableColumn fx:id="locationCol" text="Địa điểm" prefWidth="125"/>
+        </columns>
+    </TableView>
+    <Label fx:id="totalLabel" text="Tổng số sự kiện: 0" style="-fx-font-size: 14;"/>
+</VBox>
